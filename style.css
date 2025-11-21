@@ -1,0 +1,68 @@
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+
+nav {
+    background-color: #08011a;
+    padding: 0
+}
+nav img {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+
+button, p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: white;
+}
+p {
+    margin:0;
+}
+
+
+#home{
+    background-color: #06142b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px
+}
+#home div button {
+    margin-top: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#home div:nth-of-type(1){
+    margin-right:100px
+}
+#home-side-text-one, #home-side-text-two {
+    color: white;
+    font-size:50px
+}
+#home-side-text-one {
+    display: inline;
+}
+#home-side-text-two {
+    margin-left: 100px
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    padding-left: 25;
+    padding-right: 25;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.whatsapp {
+    background-color: #1fcb42;
+}
+.email {
+    background-color: #ea4335;
+}
