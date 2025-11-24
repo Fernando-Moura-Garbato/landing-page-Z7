@@ -9,20 +9,38 @@ nav {
     padding: 0
 }
 nav img {
-    padding: 10px;
-    height: 40px;
-    width: 40px;
+    padding: 15px;
+    height: 30px;
+    width: 60px;
 }
 
 
 button, p {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
     color: white;
+}
+button {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border: 0px;
+    padding-left: 25;
+    padding-right: 25;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #142a4f;
+    border-radius: 15px;
 }
 p {
     margin:0;
 }
+h1 {
+    margin:0;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
 
 
 #home{
@@ -32,13 +50,19 @@ p {
     align-items: center;
     padding: 200px
 }
+#home p{
+    font-weight: bold;
+}
+#home div img{
+    height: 200px;
+}
 #home div button {
     margin-top: 120px;
     margin-left: 10px;
     margin-right: 10px;
 }
 #home div:nth-of-type(1){
-    margin-right:100px
+    margin-right:175px
 }
 #home-side-text-one, #home-side-text-two {
     color: white;
@@ -48,21 +72,39 @@ p {
     display: inline;
 }
 #home-side-text-two {
-    margin-left: 100px
+    margin-left: 175px
 }
 
-button {
-    color: white;
-    font-weight: bold;
-    border: 0px;
-    padding-left: 25;
-    padding-right: 25;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto.ttf') format('truetype');
+    font-weight: normal;
 }
-.whatsapp {
-    background-color: #1fcb42;
+#examples {
+    background-color: #142a4f;
+    padding: 100px;
 }
-.email {
-    background-color: #ea4335;
+#examples p, h1 {
+    font-family: 'Roboto';
 }
+#examples h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+#first-example-img {
+    width: 600px;
+    margin-right: 100px;
+}
+#second-example-img {
+    width: 600px;
+    margin-left: 100px;
+}
+.example {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
