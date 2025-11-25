@@ -4,31 +4,31 @@ body {
 }
 
 
+/* Navegação */
 nav {
-    background-color: #08011a;
-    padding: 0
+    background: #06142B;
+    background: linear-gradient(0deg, rgba(6, 20, 43, 1) 0%, rgba(8, 1, 26, 1) 100%);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
 }
 nav img {
     padding: 15px;
     height: 30px;
     width: 60px;
+    margin-left: 100px
+}
+nav p {
+    font-size: 35px;
+    margin-top: 4px;
+    font-family: ''
 }
 
 
+/* Gerais */
 button, p {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-}
-button {
-    font-weight: bold;
-    font-size: 17px;
-    border: 0px;
-    padding-left: 25;
-    padding-right: 25;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #142a4f;
-    border-radius: 15px;
 }
 p {
     margin:0;
@@ -41,13 +41,13 @@ h1 {
 }
 
 
-
+/* Home */
 #home{
     background-color: #06142b;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 200px
+    padding: 8%
 }
 #home p{
     font-weight: bold;
@@ -56,6 +56,15 @@ h1 {
     height: 9vw;
 }
 #home div button {
+    font-weight: bold;
+    font-size: 17px;
+    border: 0px;
+    padding-left: 25;
+    padding-right: 25;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #142a4f;
+    border-radius: 15px;
     margin-top: 120px;
     margin-left: 10px;
     margin-right: 10px;
@@ -75,7 +84,7 @@ h1 {
 }
 
 
-
+/* Exemplos */
 @font-face {
     font-family: 'Roboto';
     src: url('fonts/Roboto.ttf') format('truetype');
@@ -107,64 +116,84 @@ h1 {
     margin-top: 100px;
 }
 
+
+/* Imagem estática */
 #static {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     background-color: #06142b;
     justify-content: center;
     height:3000px;
+    padding-bottom:200px;
     overflow: visible;
 }
-
 .side-text {
     margin-top: 100px;
 }
-
 .side-text p {
     top: 100px;
     position:sticky;
-    
+    font-size: 22px;
+    font-family: "Roboto";
+    transition: 1.4s ease;
+    opacity: 0
 }
-
+.side-text p.active{
+    opacity: 1;
+}
 #static img {
     position:sticky;
     margin-top: 100px;
     top:100px;
-    height: 450px;
+    bottom: 200px;
+    height: 20%;
     grid-column: 2;
+    justify-self: center;
 }
 #side-text-one {
     grid-column: 1;
 }
 #side-text-two {
-    grid-column: 1;
+    grid-column: 3;
 }
 #side-text-three {
-    grid-column: 2;
+    grid-column: 1;
+    grid-row: 2;
 }
 #side-text-four {
-    grid-column: 2;
+    grid-column: 3;
+    grid-row: 2;
+}
+#side-text-one, #side-text-three {
+    justify-self: right;
 }
 
+
+/* Lead final */
 #contact {
     background-color: white;
     text-align: center;
 }
-
 #contact img{
     height: 300px;
+    margin-top: 100px
 }
-
 #contact h1, #contact p{
     color: black;
     font-family:  'Roboto';
 }
-
 #contact h1{
     font-size: 100px
 }
-
 #contact p {
     font-size: 25px;
+}
+.end-button {
+    background-color: rgb(2, 2, 2);
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px
 }
 
