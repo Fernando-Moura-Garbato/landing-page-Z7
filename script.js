@@ -20,3 +20,16 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all elements with class="reveal"
 document.querySelectorAll('.side-text p').forEach((el) => observer.observe(el));
+document.querySelectorAll('#left-example-text h1, #left-example-text p').forEach((el) => observer.observe(el));
+document.querySelectorAll('#right-example-text h1, #right-example-text p').forEach((el) => observer.observe(el));
+document.querySelectorAll('#home div img, #home-side-text-one, #home-side-text-two').forEach((el) => observer.observe(el));
+
+function abrirWhatsapp() {
+    window.open("https://wa.me/5545998372274", "_blank");
+}
+
+function abrirEmail() {
+    window.location.href = "mailto:fernandogarbato@gmail.com"
+}
+
+

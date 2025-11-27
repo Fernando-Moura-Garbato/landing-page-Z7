@@ -1,6 +1,7 @@
 body {
     margin:0px;
     padding: 0px;
+    overflow-x: hidden
 }
 
 
@@ -14,14 +15,13 @@ nav {
 }
 nav img {
     padding: 15px;
-    height: 30px;
-    width: 60px;
-    margin-left: 100px
+    height: 20px;
+    margin-left: 100px;
 }
 nav p {
-    font-size: 35px;
+    font-size: 20px;
     margin-top: 4px;
-    font-family: ''
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 
@@ -47,20 +47,27 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8%
+    padding-top: 25vh;
+    padding-bottom: 25vh
 }
 #home p{
     font-weight: bold;
 }
 #home div img{
     height: 9vw;
+    margin-left: 2vw;
+    transform: scale(0.6)
+}
+#home div img.active {
+    transition: transform 0.4s ease-out;
+    transform: scale(1)
 }
 #home div button {
     font-weight: bold;
     font-size: 17px;
     border: 0px;
-    padding-left: 25;
-    padding-right: 25;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #142a4f;
@@ -69,18 +76,27 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
+#home div button:hover {
+    cursor: pointer;
+    background-color: #2b4674
+}
 #home div:nth-of-type(1){
     margin-right:175px
 }
 #home-side-text-one, #home-side-text-two {
     color: white;
-    font-size:50px
+    font-size:50px;
+    transform: scale(0.6)
+}
+#home-side-text-one.active, #home-side-text-two.active {
+    transform: scale(1);
+    transition: transform 0.4s ease-out;
 }
 #home-side-text-one {
-    display: inline;
+    display:inline-block
 }
 #home-side-text-two {
-    margin-left: 175px
+    margin-left: 25vw
 }
 
 
@@ -101,13 +117,45 @@ h1 {
     font-size: 50px;
     margin-bottom: 15px;
 }
+
+#left-example-text h1, #left-example-text p {
+    transform: translateX(-100%);
+    opacity: 0
+}
+#left-example-text p.active {
+    transition: transform 0.6s ease-out, opacity 0.9s ease-out;
+    transform: translateX(0);
+    opacity: 1
+}
+ #left-example-text h1.active{
+    transition: transform 0.4s ease-out, opacity 0.7s ease-out;
+    transform: translateX(0);
+    opacity: 1
+ }
+#right-example-text h1, #right-example-text p {
+    transform: translateX(100%);
+    opacity: 0
+}
+#right-example-text p.active {
+    transition: transform 0.6s ease-out, opacity 0.9s ease-out;
+    transform: translateX(0);
+    opacity: 1
+}
+ #right-example-text h1.active{
+    transition: transform 0.4s ease-out, opacity 0.7s ease-out;
+    transform: translateX(0);
+    opacity: 1
+ }
+
 #first-example-img {
     width: 600px;
     margin-right: 100px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 #second-example-img {
     width: 600px;
     margin-left: 100px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 .example {
     display:flex;
@@ -120,7 +168,7 @@ h1 {
 /* Imagem estática */
 #static {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 20% 42% 20%;
     background-color: #06142b;
     justify-content: center;
     height:3000px;
@@ -131,9 +179,8 @@ h1 {
     margin-top: 100px;
 }
 .side-text p {
-    top: 100px;
     position:sticky;
-    font-size: 22px;
+    font-size: 17.5px;
     font-family: "Roboto";
     transition: 1.4s ease;
     opacity: 0
@@ -144,11 +191,12 @@ h1 {
 #static img {
     position:sticky;
     margin-top: 100px;
-    top:100px;
+    top:25vh;
     bottom: 200px;
-    height: 20%;
+    width: 40vw;
     grid-column: 2;
     justify-self: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 #side-text-one {
     grid-column: 1;
@@ -168,11 +216,32 @@ h1 {
     justify-self: right;
 }
 
+#side-text-one p {
+    top: 28vh;
+    text-align: right;
+}
+#side-text-two p {
+    top: 67vh;
+    text-align: left;
+}
+#side-text-three p {
+    top: 67vh;
+    text-align: right;
+}
+#side-text-four p {
+    top: 28vh;
+    text-align: left;
+}
+
+
+
+
 
 /* Lead final */
 #contact {
     background-color: white;
     text-align: center;
+    height: 100vh
 }
 #contact img{
     height: 300px;
@@ -194,6 +263,15 @@ h1 {
     font-size: 22px;
     padding: 20px;
     margin-top: 100px;
-    margin-bottom: 100px
+    margin-bottom: 100px;
+    border-style: solid;
+}
+.end-button:hover {
+    cursor: pointer;
+    background-color: #fcfcfc;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    color: black
 }
 
